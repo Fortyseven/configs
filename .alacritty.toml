@@ -1,0 +1,77 @@
+live_config_reload = true
+
+[window]
+decorations = "Full"
+opacity = 1
+blur = true
+startup_mode = "Maximized"
+title = "Teletraan-1"
+dynamic_title = true
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "Iosevka", style = "normal" }
+bold = { family = "Iosevka", style = "Medium" }
+# italic = { family = "Iosevka", style = "Italic" }
+bold_italic = { family = "Iosevka", style = "Bold Italic" }
+size = 12.0
+offset = { x = 0, y = -5 }
+builtin_box_drawing = false
+
+
+[colors]
+
+draw_bold_text_with_bright_colors = true
+cursor = { text = "#000000", cursor = "#ffbb00" }
+
+[colors.primary]
+background = "#110033"
+foreground = "#C0C0C0"
+
+[colors.normal]
+black = "#000000"
+red = "#A00000"
+green = "#00A000"
+yellow = "#AA8800"
+blue = "#4444FF"
+magenta = "#A000A0"
+cyan = "#00A0A0"
+white = "#c0c0c0"
+
+[colors.bright]
+black = "#A0A0A0"
+red = "#ff2222"
+green = "#22ff22"
+# yellow = "#ffff22"
+yellow = "#ffbb00"
+blue = "#7777FF"
+magenta = "#ff00ff"
+cyan = "#00ffff"
+white = "#ffffff"
+
+[bell]
+
+animation = "Ease"
+duration = 250
+color = "#ffbb00"
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 150
+blink_timeout = 0
+unfocused_hollow = false
+
+
+[[hints.enabled]]
+
+binding = { key = "U", mods = "Control" }
+command = "xdg-open"
+hyperlinks = true
+mouse.enabled = true
+mouse.mods = "Control"
+post_processing = true
+persist = false
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩‘]+"
