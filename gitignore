@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+*.pyc
+packages/david-db/sample-data/
+venv/
+.vscode/settings.json
